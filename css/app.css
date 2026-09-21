@@ -104,7 +104,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 16px;
-  font-size: 13px;
+  font-size: 15px;
   color: var(--muted);
   min-height: 20px;
 }
@@ -127,14 +127,14 @@ body {
 h1.title, h3.title {
   font-family: 'Fredoka', -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 21px;
   margin: 0 0 10px;
   color: var(--ink);
   line-height: 1.35;
 }
-.subtitle { font-size: 11.5px; color: var(--muted); margin: 0 0 16px; }
-.title.title-sm { font-size: 18px; margin: 0 0 6px; }
-.title.title-md { font-size: 19px; margin: 0 0 4px; }
+.subtitle { font-size: 14px; color: var(--muted); margin: 0 0 16px; }
+.title.title-sm { font-size: 19px; margin: 0 0 6px; }
+.title.title-md { font-size: 20px; margin: 0 0 4px; }
 
 /* v1.67 : en-tête de l'accueil, titre + icône de recherche (point A8) sur la même ligne.
    v1.75 : icône de réglages ajoutée à côté — .home-header-actions regroupe les deux boutons avec un
@@ -161,7 +161,7 @@ h1.title, h3.title {
 
 /* ---------- écran de recherche (v1.67) ---------- */
 .search-results { margin-top: 14px; }
-.search-hint { font-size: 13.5px; line-height: 1.55; color: var(--muted); padding: 4px 2px; }
+.search-hint { font-size: 15.5px; line-height: 1.55; color: var(--muted); padding: 4px 2px; }
 
 /* v1.68 : contraste corrigé (A2, relecture bêta-testeur v1.63) — le texte gold-dark sur fond gold
    ne passait qu'à 2.25:1, et sage-dark sur fond sage à 2.32:1, tous deux largement sous le seuil
@@ -172,7 +172,7 @@ h1.title, h3.title {
    juste la généralisation d'un choix déjà fait et déjà vu dans l'app. */
 .cat-badge, .usage-badge {
   display: inline-block;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
   color: var(--gold-ink);
   background: var(--gold);
@@ -182,7 +182,7 @@ h1.title, h3.title {
 }
 .usage-badge { color: var(--ink); background: var(--sage); }
 
-.body-copy { font-size: 15.5px; line-height: 1.65; color: var(--ink); } /* 13px → 15.5px, v1.65 */
+.body-copy { font-size: 17px; line-height: 1.65; color: var(--ink); } /* 13px → 15.5px, v1.65 */
 .body-copy p { margin: 0 0 10px; }
 .body-copy blockquote { margin: 0 0 10px; padding-left: 12px; border-left: 3px solid var(--card-border); color: var(--muted); }
 .count { color: var(--gold-dark-text); font-weight: 700; } /* contraste corrigé, v1.66 */
@@ -193,7 +193,7 @@ h1.title, h3.title {
   text-align: center;
   padding: 13px;
   border-radius: 16px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
   border: none;
@@ -209,7 +209,7 @@ h1.title, h3.title {
   display: block;
   text-align: center;
   padding: 11px;
-  font-size: 12.5px;
+  font-size: 14.5px;
   color: var(--muted);
   background: none;
   border: none;
@@ -225,7 +225,7 @@ h1.title, h3.title {
   background: var(--cream);
   border-radius: 14px;
   padding: 12px 14px;
-  font-size: 13px;
+  font-size: 15px;
   color: var(--ink);
   width: 100%;
   font-family: inherit;
@@ -256,9 +256,9 @@ a.link-row, .link-row {
   font-family: inherit;
   text-align: left;
 }
-.link-row .t { font-size: 11.5px; font-weight: 700; color: #3f4f39; }
-.link-row .d { font-size: 10px; color: #41563f; margin-top: 1px; } /* #557052 → #41563f, contraste corrigé v1.66 */
-.link-row .chev { margin-left: auto; color: #41563f; font-size: 15px; }
+.link-row .t { font-size: 14px; font-weight: 700; color: #3f4f39; }
+.link-row .d { font-size: 13px; color: #41563f; margin-top: 1px; } /* #557052 → #41563f, contraste corrigé v1.66 */
+.link-row .chev { margin-left: auto; color: #41563f; font-size: 16.5px; }
 
 /* ---------- menu-row (cream) : menu du Journal ---------- */
 .menu-row, a.menu-row {
@@ -277,33 +277,33 @@ a.link-row, .link-row {
   font-family: inherit;
   text-align: left;
 }
-.menu-row .t { font-size: 12.5px; font-weight: 700; color: var(--ink); }
-.menu-row .d { font-size: 10px; color: var(--muted); margin-top: 1px; }
-.menu-row .chev { margin-left: auto; color: var(--muted); font-size: 15px; }
+.menu-row .t { font-size: 14.5px; font-weight: 700; color: var(--ink); }
+.menu-row .d { font-size: 13px; color: var(--muted); margin-top: 1px; }
+.menu-row .chev { margin-left: auto; color: var(--muted); font-size: 16.5px; }
 .menu-row .ic { width: 34px; height: 34px; border-radius: 11px; background: var(--sage-dark); flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
 .menu-row .ic img { width: 20px; height: 20px; }
 .menu-row.disabled { opacity: 0.45; cursor: default; }
 
-.entry-row { background: var(--cream); border: 1px solid var(--card-border); border-radius: 14px; padding: 11px 13px; margin-bottom: 8px; font-size: 12px; }
-.entry-row .date { font-size: 9.5px; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 3px; }
-.entry-row .txt { color: var(--ink); line-height: 1.4; font-size: 12px; }
-.example-flag { font-size: 9.5px; color: var(--muted); font-style: italic; text-align: center; margin: 4px 0 12px; }
+.entry-row { background: var(--cream); border: 1px solid var(--card-border); border-radius: 14px; padding: 11px 13px; margin-bottom: 8px; font-size: 14.5px; }
+.entry-row .date { font-size: 13px; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 3px; }
+.entry-row .txt { color: var(--ink); line-height: 1.4; font-size: 14.5px; }
+.example-flag { font-size: 13px; color: var(--muted); font-style: italic; text-align: center; margin: 4px 0 12px; }
 
 /* ---------- module cover ---------- */
-.cover-desc { font-size: 12.5px; color: var(--muted); line-height: 1.6; margin-bottom: 18px; }
-.meta-row { display: flex; gap: 14px; font-size: 11px; color: var(--muted); margin-bottom: 22px; }
+.cover-desc { font-size: 14.5px; color: var(--muted); line-height: 1.6; margin-bottom: 18px; }
+.meta-row { display: flex; gap: 14px; font-size: 13.5px; color: var(--muted); margin-bottom: 22px; }
 .volet-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: auto; }
 .volet-list .row { display: flex; align-items: center; gap: 10px; background: var(--cream); border: 1px solid var(--card-border); border-radius: 12px; padding: 9px 11px; }
-.volet-list .n { width: 22px; height: 22px; border-radius: 50%; background: var(--sage-deep); color: #fff; font-size: 11px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; } /* v1.68 : fond passé à --sage-deep, chiffre blanc */
-.volet-list .t { font-size: 11.5px; color: var(--ink); line-height: 1.3; }
-.related-box { background: var(--cream); border: 1px dashed var(--card-border); border-radius: 14px; padding: 12px 14px; font-size: 11px; color: var(--muted); line-height: 1.5; margin-top: 18px; }
-.related-box .h { font-weight: 700; color: var(--ink); font-size: 11.5px; margin-bottom: 3px; }
+.volet-list .n { width: 22px; height: 22px; border-radius: 50%; background: var(--sage-deep); color: #fff; font-size: 13.5px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; } /* v1.68 : fond passé à --sage-deep, chiffre blanc */
+.volet-list .t { font-size: 14px; color: var(--ink); line-height: 1.3; }
+.related-box { background: var(--cream); border: 1px dashed var(--card-border); border-radius: 14px; padding: 12px 14px; font-size: 13.5px; color: var(--muted); line-height: 1.5; margin-top: 18px; }
+.related-box .h { font-weight: 700; color: var(--ink); font-size: 14px; margin-bottom: 3px; }
 
 /* ---------- case / BD panel ---------- */
 .case-progress { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
 .case-progress .bar { flex: 1; height: 4px; border-radius: 2px; background: var(--card-border); overflow: hidden; }
 .case-progress .bar i { display: block; height: 100%; border-radius: 2px; transition: width 0.25s ease; }
-.case-progress .frac { font-size: 10.5px; font-weight: 700; white-space: nowrap; }
+.case-progress .frac { font-size: 13.5px; font-weight: 700; white-space: nowrap; }
 
 .case-panel {
   flex: 1;
@@ -326,11 +326,11 @@ a.link-row, .link-row {
   touch-action: pan-y;
 }
 .case-panel.climax { min-height: 200px; }
-.case-num { position: absolute; bottom: 10px; right: 16px; font-family: Georgia, serif; font-size: 28px; font-weight: 700; opacity: 0.18; }
-.case-text { font-family: Georgia, serif; font-size: 19px; line-height: 1.5; text-align: center; position: relative; }
+.case-num { position: absolute; bottom: 10px; right: 16px; font-family: Georgia, serif; font-size: 29px; font-weight: 700; opacity: 0.18; }
+.case-text { font-family: Georgia, serif; font-size: 20px; line-height: 1.5; text-align: center; position: relative; }
 .glow-ring { position: absolute; width: 220px; height: 220px; border-radius: 50%; background: radial-gradient(circle, rgba(232,201,138,0.55), rgba(232,201,138,0) 70%); }
 
-.swipe-hint { text-align: center; font-size: 10.5px; color: var(--muted); margin-top: 14px; }
+.swipe-hint { text-align: center; font-size: 13.5px; color: var(--muted); margin-top: 14px; }
 .case-tap-zone { position: absolute; inset: 0; display: flex; }
 /* v1.48 : case "planche" (panelHtml) — contenu bespoke (tableau, anecdote longue) plutôt que le
    case-text centré ; aligné en haut, scrollable, sans fond coloré ni ombre portée du numéro. */
@@ -341,29 +341,29 @@ a.link-row, .link-row {
    du tableau est court, pas besoin de défilement, donc overflow laissé visible pour permettre au
    tableau de déborder jusqu'aux bords de l'écran via une marge négative. */
 .case-panel-table { flex-direction: column; align-items: flex-start; justify-content: flex-start; overflow: visible; padding: 6px 0; min-height: 0; }
-.ev-table-title { font-family: Georgia, serif; font-size: 14px; text-align: center; margin: 0 0 12px; color: var(--ink); width: 100%; padding: 0 20px; }
-.ev-table { display: grid; grid-template-columns: 70px minmax(0, 1fr) minmax(0, 1fr); gap: 1px; background: var(--card-border); overflow: hidden; font-size: 10px; width: calc(100% + 40px); margin: 0 -20px; border-radius: 0; }
+.ev-table-title { font-family: Georgia, serif; font-size: 16px; text-align: center; margin: 0 0 12px; color: var(--ink); width: 100%; padding: 0 20px; }
+.ev-table { display: grid; grid-template-columns: 70px minmax(0, 1fr) minmax(0, 1fr); gap: 1px; background: var(--card-border); overflow: hidden; font-size: 13px; width: calc(100% + 40px); margin: 0 -20px; border-radius: 0; }
 .ev-cell { background: var(--cream); padding: 8px 5px; line-height: 1.4; color: var(--ink); min-width: 0; overflow-wrap: break-word; }
 .ev-corner { background: var(--bg); }
 .ev-head { background: var(--sage); font-weight: 700; color: #3f4f39; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-.ev-head .ev-sub { display: block; font-weight: 400; font-size: 8px; margin-top: 2px; opacity: 0.85; }
+.ev-head .ev-sub { display: block; font-weight: 400; font-size: 12px; margin-top: 2px; opacity: 0.85; }
 .ev-rowhead { background: var(--gold); font-weight: 700; color: #5c481e; display: flex; align-items: center; justify-content: center; text-align: center; }
 .anecdote .hl { font-weight: 700; color: #2f4a29; }
 /* v1.56 : phrase entière mise en avant (pas seulement un passage inline comme .hl) — première apparition
    dans l'écran témoin du module "respiration" (le témoignage de Johan y isole une phrase entière,
    "Un petit pas est déjà un pas...", via <p class="highlight">, pas un <span class="hl"> partiel comme
    pour "évitement"). Reprise à l'identique du style défini dans la maquette elle-même. */
-.anecdote p.highlight { font-weight: 700; font-size: 12.5px; color: #2f4a29; }
+.anecdote p.highlight { font-weight: 700; font-size: 14.5px; color: #2f4a29; }
 .case-tap-zone .z { flex: 1; }
 
-.closing-hint { font-family: Georgia, serif; font-style: italic; font-size: 13px; color: var(--sage-dark); margin: 16px 0 8px; }
+.closing-hint { font-family: Georgia, serif; font-style: italic; font-size: 15px; color: var(--sage-dark); margin: 16px 0 8px; }
 
 /* v1.58 : bouton discret de retour à l'accueil, injecté en bas de chaque écran (cf. js/util.js,
    injectHomeLink, et js/app.js, renderRoute). Texte simple et atténué plutôt qu'un bouton plein —
    ne doit jamais rivaliser visuellement avec l'action principale de l'écran (ex. les liens de clôture
    d'un module). Zone de tap généreuse malgré le poids visuel léger, pour rester facile à toucher. */
 .home-link-discreet { text-align: center; margin-top: 18px; flex-shrink: 0; }
-.home-link-discreet a { display: inline-block; padding: 10px 14px; color: var(--muted); font-size: 11.5px; text-decoration: none; }
+.home-link-discreet a { display: inline-block; padding: 10px 14px; color: var(--muted); font-size: 14px; text-decoration: none; }
 .home-link-discreet a:active { opacity: 0.6; }
 
 /* v1.72 : même traitement visuel que .home-link-discreet ci-dessus (texte atténué, pas de bouton
@@ -372,7 +372,7 @@ a.link-row, .link-row {
    : reste secondaire, sous le bouton principal, pour ne jamais lui faire concurrence — cf. cahier des
    charges v1.72 pour la discussion (charge attentionnelle sous anxiété, Eysenck & Derakshan). */
 .mv-rerecord-link { text-align: center; margin-top: 10px; }
-.mv-rerecord-link a { display: inline-block; padding: 8px 14px; color: var(--muted); font-size: 11.5px; text-decoration: none; line-height: 1.5; }
+.mv-rerecord-link a { display: inline-block; padding: 8px 14px; color: var(--muted); font-size: 14px; text-decoration: none; line-height: 1.5; }
 .mv-rerecord-link a:active { opacity: 0.6; }
 
 /* ---------- home grid ---------- */
@@ -386,7 +386,7 @@ a.link-row, .link-row {
   border: 1px solid #b97d34;
   border-radius: 20px;
   padding: 5px 14px 5px 5px;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   margin-bottom: 22px;
   cursor: pointer;
@@ -399,7 +399,7 @@ a.link-row, .link-row {
 .cat-section { margin-bottom: 22px; border-radius: 16px; }
 .cat-section h2 {
   font-family: Georgia, serif;
-  font-size: 15px;
+  font-size: 16.5px;
   color: var(--sage-dark);
   margin: 0 0 10px;
   display: flex;
@@ -420,12 +420,12 @@ a.link-row, .link-row {
   margin: 4px 0 0;
   font-family: Georgia, serif;
   font-style: italic;
-  font-size: 12.5px;
+  font-size: 14.5px;
   color: var(--sage-dark);
   cursor: pointer;
   text-align: left;
 }
-.axis-toggle .chev { margin-left: auto; font-size: 13px; color: var(--sage-dark); transition: transform 0.15s ease; }
+.axis-toggle .chev { margin-left: auto; font-size: 15px; color: var(--sage-dark); transition: transform 0.15s ease; }
 .axis-toggle.open .chev { transform: rotate(90deg); }
 .axis-toggle.open { color: var(--gold-ink); }
 .axis-toggle.open .chev { color: var(--gold-ink); }
@@ -434,7 +434,7 @@ a.link-row, .link-row {
   border: 1px solid var(--card-border);
   border-radius: 14px;
   padding: 12px 12px;
-  font-size: 11.5px;
+  font-size: 14px;
   line-height: 1.4;
   color: var(--ink);
   cursor: pointer;
@@ -444,7 +444,7 @@ a.link-row, .link-row {
 }
 .tool-card:hover { border-color: var(--sage-dark); }
 .tool-card.locked { opacity: 0.42; cursor: default; }
-.tool-card .soon { display: block; font-size: 9px; color: var(--muted); font-style: italic; margin-top: 4px; }
+.tool-card .soon { display: block; font-size: 12.5px; color: var(--muted); font-style: italic; margin-top: 4px; }
 .tool-grid.tool-grid-1col { grid-template-columns: 1fr; }
 
 /* ---------- vue "grille 2x2" de l'accueil (proposition, non validée) ---------- */
@@ -456,7 +456,7 @@ a.link-row, .link-row {
 .view-toggle-btn {
   flex: 1;
   font-family: inherit;
-  font-size: 11px;
+  font-size: 13.5px;
   font-weight: 700;
   padding: 7px 0;
   border-radius: 10px;
@@ -471,7 +471,7 @@ a.link-row, .link-row {
   color: #fff;
 }
 .proposal-flag {
-  font-size: 9.5px;
+  font-size: 13px;
   color: var(--muted);
   font-style: italic;
   text-align: center;
@@ -510,7 +510,7 @@ a.link-row, .link-row {
   display: block;
 }
 .grid-tile-name {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
   color: var(--ink);
 }
@@ -556,7 +556,7 @@ a.link-row, .link-row {
 .cbtn-txt {
   font-family: Georgia, serif;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 18px;
   color: #5c481e;
   text-align: center;
   line-height: 1.3;
@@ -581,10 +581,10 @@ a.link-row, .link-row {
   .cbtn-ring { animation: none; }
   .cbtn { animation: none; }
 }
-.tap-label { font-size: 12px; color: var(--muted); text-align: center; }
+.tap-label { font-size: 14.5px; color: var(--muted); text-align: center; }
 .tap-label b { color: var(--ink); }
 .feed-note {
-  font-size: 11px;
+  font-size: 13.5px;
   color: var(--muted);
   text-align: center;
   max-width: 220px;
@@ -596,20 +596,33 @@ a.link-row, .link-row {
 }
 
 .framing-box { background: var(--cream); border: 1px solid var(--card-border); border-radius: 18px; padding: 18px 16px; margin-top: 6px; cursor: pointer; }
-.framing-box p { font-family: Georgia, serif; font-size: 14.5px; line-height: 1.6; color: var(--ink); margin: 0 0 12px; }
+.framing-box p { font-family: Georgia, serif; font-size: 16px; line-height: 1.6; color: var(--ink); margin: 0 0 12px; }
 .framing-box p:last-child { margin-bottom: 0; }
 
 .emergency-strip { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--card-border); text-align: center; }
-.emergency-strip .lbl { font-size: 10px; font-weight: 700; color: var(--terracotta); text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 4px; }
-.emergency-strip .txt { font-size: 10.5px; color: var(--muted); line-height: 1.5; }
+.emergency-strip .lbl { font-size: 13px; font-weight: 700; color: var(--terracotta); text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 4px; }
+.emergency-strip .txt { font-size: 13.5px; color: var(--muted); line-height: 1.5; }
 .emergency-strip .txt b { color: var(--ink); }
 
 .detresse-card { background: var(--sage); border-radius: 16px; padding: 14px; margin-top: 8px; cursor: pointer; }
-.detresse-card .lbl { font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #41563f; margin-bottom: 6px; } /* #557052 → #41563f, contraste corrigé v1.82 (3.23:1 → 4.71:1 sur --sage ; même correction déjà faite pour .link-row en v1.66 et .plan-field en v1.71) */
-.detresse-card .t { font-family: Georgia, serif; font-size: 15px; font-weight: 700; color: #3f4f39; margin-bottom: 4px; }
-.detresse-card .d { font-size: 11px; color: #41563f; line-height: 1.5; } /* #557052 → #41563f, contraste corrigé v1.82 */
+.detresse-card .lbl { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #41563f; margin-bottom: 6px; } /* #557052 → #41563f, contraste corrigé v1.82 (3.23:1 → 4.71:1 sur --sage ; même correction déjà faite pour .link-row en v1.66 et .plan-field en v1.71) */
+.detresse-card .t { font-family: Georgia, serif; font-size: 16.5px; font-weight: 700; color: #3f4f39; margin-bottom: 4px; }
+.detresse-card .d { font-size: 13.5px; color: #41563f; line-height: 1.5; } /* #557052 → #41563f, contraste corrigé v1.82 */
 
-.tap-hint { font-size: 11px; color: var(--muted); font-style: italic; text-align: center; margin-top: 12px; cursor: pointer; }
+.tap-hint { font-size: 13.5px; color: var(--muted); font-style: italic; text-align: center; margin-top: 12px; cursor: pointer; }
+
+/* v1.95 : geste "toucher pour commencer" sur les exercices de respiration à cercle (cœur, bulle,
+   courbe, cercle d'onboarding/Moment difficile, mantra) — à la demande de Johan, pour que le
+   rythme de respiration ne s'impose jamais avant que la personne soit prête (cf. commentaire en
+   tête de js/screens/outil-respiration.js). `.is-idle` met en pause l'animation CSS de pulsation
+   du cercle tant qu'il n'a pas été touché ; `.tap-to-start-hint` est la consigne affichée juste
+   en dessous, retirée du DOM au premier toucher. */
+.heart-circle.is-idle, .bubble.is-idle, .breath-circle.is-idle, .mantra-circle.is-idle {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.curve-wrap.is-idle { cursor: pointer; }
+.tap-to-start-hint { font-size: 13.5px; color: var(--muted); font-style: italic; text-align: center; margin: -4px 0 14px; }
 
 /* ---------- respiration tool ---------- */
 .level-card {
@@ -630,18 +643,18 @@ a.link-row, .link-row {
 .level-card.suggested { background: var(--sage); border-color: var(--sage-dark); }
 /* v1.68 : fond passé à --sage-deep (chiffre blanc, cf. tokens en tête de fichier) — la bordure de la
    carte "Suggéré" juste au-dessus, elle, reste en --sage-dark, inchangée. */
-.level-num { width: 30px; height: 30px; border-radius: 50%; background: var(--sage-deep); color: #fff; font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.level-num { width: 30px; height: 30px; border-radius: 50%; background: var(--sage-deep); color: #fff; font-weight: 700; font-size: 15px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .level-card.suggested .level-num { background: var(--gold-deep); }
-.level-txt .h { font-size: 12.5px; font-weight: 700; color: var(--ink); }
-.level-txt .d { font-size: 10.5px; color: var(--muted); margin-top: 1px; line-height: 1.4; }
+.level-txt .h { font-size: 14.5px; font-weight: 700; color: var(--ink); }
+.level-txt .d { font-size: 13.5px; color: var(--muted); margin-top: 1px; line-height: 1.4; }
 /* v1.68 : contraste corrigé (A2) — n'apparaît en pratique que sur .level-card.suggested (fond
    --sage), où gold-dark ne passait qu'à 2.12:1. --gold-ink (5.15:1 sur --sage, 7.78:1 sur --cream)
    garde l'intention d'origine — un accent doré distinct du corps sauge de la carte "Suggéré", comme
    son cercle numéroté — tout en repassant au-dessus du seuil WCAG AA. */
-.level-tag { font-size: 9px; font-weight: 700; color: var(--gold-ink); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 3px; }
+.level-tag { font-size: 12.5px; font-weight: 700; color: var(--gold-ink); text-transform: uppercase; letter-spacing: 0.04em; margin-top: 3px; }
 
-.ma-version { margin-top: 16px; display: flex; align-items: center; gap: 8px; font-size: 11.5px; color: var(--muted); border-top: 1px solid var(--card-border); padding-top: 14px; background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer; font-family: inherit; width: 100%; text-align: left; }
-.ma-version .ic { width: 24px; height: 24px; border-radius: 8px; background: var(--cream); border: 1px solid var(--card-border); display: flex; align-items: center; justify-content: center; font-size: 12px; flex-shrink: 0; }
+.ma-version { margin-top: 16px; display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--muted); border-top: 1px solid var(--card-border); padding-top: 14px; background: none; border-left: none; border-right: none; border-bottom: none; cursor: pointer; font-family: inherit; width: 100%; text-align: left; }
+.ma-version .ic { width: 24px; height: 24px; border-radius: 8px; background: var(--cream); border: 1px solid var(--card-border); display: flex; align-items: center; justify-content: center; font-size: 14.5px; flex-shrink: 0; }
 
 /* v1.84 : touch-action: none pour empêcher le geste de suivi au doigt de faire défiler l'écran
    (retour utilisateur — le doigt posé puis déplacé pour suivre le point faisait bouger toute la
@@ -666,7 +679,7 @@ a.link-row, .link-row {
    lisible. */
 .curve-wrap.dragging .curve-marker { box-shadow: 0 0 0 6px rgba(255,255,255,0.42), 0 0 0 15px rgba(255,255,255,0.2); }
 .curve-stem { position: absolute; left: 127px; width: 2px; margin-left: -1px; background: repeating-linear-gradient(to bottom, rgba(255,255,255,0.55) 0 4px, transparent 4px 8px); pointer-events: none; }
-.phase-label { text-align: center; font-size: 14px; font-weight: 700; color: var(--sage-dark); margin-bottom: 14px; height: 20px; }
+.phase-label { text-align: center; font-size: 16px; font-weight: 700; color: var(--sage-dark); margin-bottom: 14px; height: 20px; }
 
 .heart-wrap { display: flex; align-items: center; justify-content: center; margin: 10px 0 20px; }
 .heart-circle { width: 120px; height: 120px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, var(--sage), var(--sage-dark)); box-shadow: 0 0 0 10px rgba(183,205,176,0.3); display: flex; align-items: center; justify-content: center; animation: heartBreathe 14s ease-in-out infinite; }
@@ -676,9 +689,9 @@ a.link-row, .link-row {
   57.14%  { transform: scale(1.16); }
   100%    { transform: scale(0.82); }
 }
-.heart-label { color: #fff; font-weight: 700; font-size: 14px; text-shadow: 0 1px 3px rgba(0,0,0,0.25); }
+.heart-label { color: #fff; font-weight: 700; font-size: 16px; text-shadow: 0 1px 3px rgba(0,0,0,0.25); }
 
-.word-chip { display: inline-block; background: var(--cream); border: 1px solid var(--card-border); border-radius: 14px; padding: 7px 12px; font-size: 11.5px; font-weight: 600; color: var(--ink); margin: 0 6px 8px 0; cursor: pointer; font-family: inherit; }
+.word-chip { display: inline-block; background: var(--cream); border: 1px solid var(--card-border); border-radius: 14px; padding: 7px 12px; font-size: 14px; font-weight: 600; color: var(--ink); margin: 0 6px 8px 0; cursor: pointer; font-family: inherit; }
 .word-chip.chosen { background: var(--gold); border-color: var(--gold-dark); color: var(--gold-ink); }
 input.word-chip.custom { background: transparent; border-style: dashed; border-color: var(--muted); color: var(--muted); font-style: italic; }
 .color-row { display: flex; gap: 16px; margin: 10px 0 4px; padding: 6px 2px; }
@@ -687,20 +700,20 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
 
 .bubble-wrap { display: flex; align-items: center; justify-content: center; margin: 6px 0 20px; }
 .bubble { width: 120px; height: 120px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; animation: heartBreathe 14s ease-in-out infinite; box-shadow: 0 0 26px 8px rgba(232,201,138,0.55), 0 0 60px 22px rgba(232,201,138,0.3), 0 0 100px 40px rgba(232,201,138,0.15); }
-.bubble-word { font-family: Georgia, serif; font-style: italic; font-size: 13px; color: var(--gold-ink); }
+.bubble-word { font-family: Georgia, serif; font-style: italic; font-size: 15px; color: var(--gold-ink); }
 
 .fav-row { display: flex; gap: 2px; }
-.fav-row button { background: none; border: none; cursor: pointer; font-size: 15px; color: var(--card-border); padding: 2px; line-height: 1; }
+.fav-row button { background: none; border: none; cursor: pointer; font-size: 16.5px; color: var(--card-border); padding: 2px; line-height: 1; }
 .fav-row button.on { color: var(--gold-dark-text); } /* contraste corrigé, v1.66 */
 
 /* ---------- onboarding dots ---------- */
 .dots { display: flex; gap: 6px; margin-bottom: 22px; justify-content: center; }
 .dots span { width: 6px; height: 6px; border-radius: 50%; background: var(--card-border); }
 .dots span.on { background: var(--sage-dark); }
-.avatar { width: 64px; height: 64px; border-radius: 50%; background: var(--sage-dark); color: #fff; font-family: Georgia, serif; font-size: 24px; display: flex; align-items: center; justify-content: center; margin: 6px auto 18px; }
-.name-highlight { font-family: Georgia, serif; font-style: italic; font-size: 16px; color: var(--sage-dark); font-weight: 400; }
+.avatar { width: 64px; height: 64px; border-radius: 50%; background: var(--sage-dark); color: #fff; font-family: Georgia, serif; font-size: 25px; display: flex; align-items: center; justify-content: center; margin: 6px auto 18px; }
+.name-highlight { font-family: Georgia, serif; font-style: italic; font-size: 17px; color: var(--sage-dark); font-weight: 400; }
 .gift-card { background: var(--sage-dark); border-radius: 22px; padding: 22px 18px; margin: 10px 0 16px; }
-.gift-card .mantra { font-family: Georgia, serif; font-size: 18px; line-height: 1.5; color: #fff; text-align: center; }
+.gift-card .mantra { font-family: Georgia, serif; font-size: 19px; line-height: 1.5; color: #fff; text-align: center; }
 .breath-wrap { display: flex; align-items: center; justify-content: center; margin: 4px 0 18px; }
 .breath-circle { width: 128px; height: 128px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, var(--sage), var(--sage-dark)); box-shadow: 0 0 0 10px rgba(183,205,176,0.35); display: flex; align-items: center; justify-content: center; animation: onbBreathe 9s ease-in-out infinite; }
 @keyframes onbBreathe {
@@ -708,7 +721,7 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
   44.4% { transform: scale(1.12); }
   100%  { transform: scale(0.78); }
 }
-.breath-label { color: #fff; font-weight: 700; font-size: 15px; text-shadow: 0 1px 3px rgba(0,0,0,0.25); letter-spacing: 0.02em; }
+.breath-label { color: #fff; font-weight: 700; font-size: 16.5px; text-shadow: 0 1px 3px rgba(0,0,0,0.25); letter-spacing: 0.02em; }
 
 /* ---------- outil "Le mantra" (v1.27) — courbe et gabarit propres, cf. design/ecrans-outils-je-mancre.html ---------- */
 .mantra-wrap { display: flex; align-items: center; justify-content: center; margin: 10px 0 12px; }
@@ -725,11 +738,11 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
   50%  { transform: scale(1.1); }
   100% { transform: scale(0.82); }
 }
-.mantra-txt { color: #fff; font-weight: 700; font-size: 13px; text-align: center; line-height: 1.4; text-shadow: 0 1px 3px rgba(0,0,0,0.25); }
+.mantra-txt { color: #fff; font-weight: 700; font-size: 15px; text-align: center; line-height: 1.4; text-shadow: 0 1px 3px rgba(0,0,0,0.25); }
 
 /* ---------- outil "Je m'ancre, je suis là" (v1.28-v1.29) — étapes des cinq sens, cf. design/ecrans-outils-je-mancre.html ---------- */
 .sense-step { display: flex; align-items: flex-start; gap: 10px; background: var(--cream); border: 1px solid var(--card-border); border-radius: 14px; padding: 9px 11px; margin-bottom: 7px; }
-.sense-step .n { width: 24px; height: 24px; border-radius: 50%; color: #fff; font-weight: 700; font-size: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.sense-step .n { width: 24px; height: 24px; border-radius: 50%; color: #fff; font-weight: 700; font-size: 14.5px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 /* Dégradé du plus clair (5) au plus foncé (2) — resserré en v1.68 : les 3 teintes les plus claires
    (n5, n4, n3) sont assombries pour que leur chiffre blanc atteigne 4.5:1 (elles ne passaient qu'à
    1.7:1, 2.5:1 et 3.93:1). n2, déjà à 5.95:1, reste inchangée. Ordre de clarté préservé (n5 restant
@@ -739,63 +752,63 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
 .sense-step .n.n4 { background: #617558; } /* 5.01:1 (était #8fac82, 2.5:1) */
 .sense-step .n.n3 { background: #586f51; } /* 5.52:1 (était #6c8863, 3.93:1) */
 .sense-step .n.n2 { background: #4f6b47; } /* 5.95:1, déjà conforme, inchangée */
-.sense-step .txt .h { font-size: 11.5px; font-weight: 700; color: var(--ink); }
-.sense-step .txt .h .sense-verb { font-size: 15px; }
-.sense-step .txt .d { font-size: 10.5px; color: var(--muted); margin-top: 1px; line-height: 1.4; }
+.sense-step .txt .h { font-size: 14px; font-weight: 700; color: var(--ink); }
+.sense-step .txt .h .sense-verb { font-size: 16.5px; }
+.sense-step .txt .d { font-size: 13.5px; color: var(--muted); margin-top: 1px; line-height: 1.4; }
 /* ---------- outil "Je marche, je me libère" (v1.30) — encart anecdote, cf. design/ecrans-outils-je-mancre.html ---------- */
-.anecdote { background: var(--sage); border-radius: 14px; padding: 12px 14px; margin-top: 10px; font-size: 14.5px; line-height: 1.6; color: #3f4f39; } /* 11.5px → 14.5px, v1.65 */
-.anecdote .lbl { font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #41563f; margin-bottom: 5px; } /* #557052 → #41563f, contraste corrigé v1.82 (3.23:1 → 4.71:1 sur --sage ; même correction déjà faite pour .link-row en v1.66 et .plan-field en v1.71) */
+.anecdote { background: var(--sage); border-radius: 14px; padding: 12px 14px; margin-top: 10px; font-size: 16px; line-height: 1.6; color: #3f4f39; } /* 11.5px → 14.5px, v1.65 */
+.anecdote .lbl { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #41563f; margin-bottom: 5px; } /* #557052 → #41563f, contraste corrigé v1.82 (3.23:1 → 4.71:1 sur --sage ; même correction déjà faite pour .link-row en v1.66 et .plan-field en v1.71) */
 .anecdote p { margin: 0 0 6px; }
 .anecdote p:last-child { margin-bottom: 0; }
 .body-copy blockquote.marche-phrase { font-family: Georgia, serif; font-style: italic; color: var(--sage-dark); border-left-color: var(--sage); }
 
 /* ---------- outil "Je sens cette odeur, je construis ma sérénité" (v1.33) — note d'usage, cf. design/ecrans-outils-je-mancre.html ---------- */
-.usage-note { font-size: 11px; font-style: italic; color: var(--sage-dark); background: var(--cream); border: 1px solid var(--card-border); border-radius: 12px; padding: 8px 12px; margin-bottom: 12px; line-height: 1.5; }
+.usage-note { font-size: 13.5px; font-style: italic; color: var(--sage-dark); background: var(--cream); border: 1px solid var(--card-border); border-radius: 12px; padding: 8px 12px; margin-bottom: 12px; line-height: 1.5; }
 
 /* ---------- ressource "Je me critique, je me réponds avec tendresse" (v1.37), cf. design/ecrans-outils-mes-ressources.html ---------- */
-.field-lbl { font-size: 10.5px; font-weight: 700; color: var(--sage-dark); margin: 8px 0 4px; }
-.dialog-ex { background: var(--cream); border: 1px solid var(--card-border); border-radius: 12px; padding: 10px 12px; margin: 8px 0; font-size: 11.5px; line-height: 1.5; }
+.field-lbl { font-size: 13.5px; font-weight: 700; color: var(--sage-dark); margin: 8px 0 4px; }
+.dialog-ex { background: var(--cream); border: 1px solid var(--card-border); border-radius: 12px; padding: 10px 12px; margin: 8px 0; font-size: 14px; line-height: 1.5; }
 .dialog-ex .who { font-weight: 700; color: var(--muted); }
 .dialog-ex .crit { color: var(--muted); font-style: italic; margin-bottom: 5px; }
 .dialog-ex .ans { color: #3f4f39; font-style: italic; }
 
 /* ---------- ressource "J'écris, je m'en libère" (v1.44), cf. design/ecrans-outils-mes-ressources.html ---------- */
 .timer-wrap { display: flex; align-items: center; justify-content: center; margin: 10px 0 12px; }
-.timer { width: 110px; height: 110px; border-radius: 50%; border: 6px solid var(--sage); display: flex; align-items: center; justify-content: center; font-family: Georgia, serif; font-size: 22px; font-weight: 700; color: var(--sage-dark); background: var(--cream); }
+.timer { width: 110px; height: 110px; border-radius: 50%; border: 6px solid var(--sage); display: flex; align-items: center; justify-content: center; font-family: Georgia, serif; font-size: 23px; font-weight: 700; color: var(--sage-dark); background: var(--cream); }
 .timer.done { border-color: var(--terracotta); color: var(--terracotta); }
-.ecriture-closing { font-style: italic; color: var(--sage-dark); text-align: center; margin: 8px 0 0; font-size: 12.5px; line-height: 1.5; }
+.ecriture-closing { font-style: italic; color: var(--sage-dark); text-align: center; margin: 8px 0 0; font-size: 14.5px; line-height: 1.5; }
 
 /* ---------- ressource "Je me confie, je me sens accompagné" (v1.38), cf. design/ecrans-outils-mes-ressources.html ---------- */
-.glow-block { background: linear-gradient(165deg, var(--glow-grad-1), var(--cream)); border-radius: 14px; padding: 13px 15px; margin: 10px 0; font-size: 12.5px; line-height: 1.6; color: #2f4a29; box-shadow: 0 0 22px 4px rgba(232,201,138,0.45), 0 0 46px 10px rgba(232,201,138,0.2); }
+.glow-block { background: linear-gradient(165deg, var(--glow-grad-1), var(--cream)); border-radius: 14px; padding: 13px 15px; margin: 10px 0; font-size: 14.5px; line-height: 1.6; color: #2f4a29; box-shadow: 0 0 22px 4px rgba(232,201,138,0.45), 0 0 46px 10px rgba(232,201,138,0.2); }
 .glow-block p { margin: 0 0 8px; }
 .glow-block p:last-child { margin-bottom: 0; }
 
 .ancrage-closing {
   font-family: Georgia, serif;
   font-style: italic;
-  font-size: 32px;
+  font-size: 33px;
   line-height: 1.3;
   color: var(--sage-dark);
   text-align: center;
   margin: 18px 0 10px;
 }
-.closing { font-family: Georgia, serif; font-style: italic; font-size: 15.5px; color: var(--sage-dark); }
+.closing { font-family: Georgia, serif; font-style: italic; font-size: 17px; color: var(--sage-dark); }
 .option { background: var(--cream); border: 1px solid var(--card-border); border-radius: 16px; padding: 12px 14px; margin-bottom: 10px; cursor: pointer; width: 100%; text-align: left; font-family: inherit; }
-.option .h { font-size: 13.5px; font-weight: 700; color: var(--ink); margin-bottom: 2px; }
+.option .h { font-size: 15.5px; font-weight: 700; color: var(--ink); margin-bottom: 2px; }
 .option .ic { color: var(--sage-dark); margin-right: 6px; }
-.option .d { font-size: 11px; color: var(--muted); line-height: 1.4; }
+.option .d { font-size: 13.5px; color: var(--muted); line-height: 1.4; }
 .option.chosen { background: var(--sage); border-color: var(--sage-dark); }
 
 /* ---------- onboarding : confort de lecture mobile (police agrandie, retour terrain Johan) ---------- */
-#onboardingScreen .body-copy { font-size: 15px; line-height: 1.65; }
-#onboardingScreen .closing { font-size: 17px; }
-#onboardingScreen .btn-primary { font-size: 15px; padding: 14px; }
-#onboardingScreen .btn-secondary { font-size: 14px; }
-#onboardingScreen .field { font-size: 15px; }
-#onboardingScreen .option .h { font-size: 15px; }
-#onboardingScreen .option .d { font-size: 12.5px; }
-#onboardingScreen .gift-card .mantra { font-size: 19.5px; }
-#onboardingScreen .breath-label { font-size: 16.5px; }
+#onboardingScreen .body-copy { font-size: 16.5px; line-height: 1.65; }
+#onboardingScreen .closing { font-size: 18px; }
+#onboardingScreen .btn-primary { font-size: 16.5px; padding: 14px; }
+#onboardingScreen .btn-secondary { font-size: 16px; }
+#onboardingScreen .field { font-size: 16.5px; }
+#onboardingScreen .option .h { font-size: 16.5px; }
+#onboardingScreen .option .d { font-size: 14.5px; }
+#onboardingScreen .gift-card .mantra { font-size: 20px; }
+#onboardingScreen .breath-label { font-size: 17.5px; }
 
 /* v1.67 : mention "ViaCalma ne remplace pas une thérapie" (texte mis à jour en v1.79, app renommée
    depuis SoCalm), en toute dernière chose avant d'entrer
@@ -810,32 +823,32 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
   padding: 12px 14px;
   margin-top: 14px;
 }
-.onboarding-disclaimer p { font-size: 14px; line-height: 1.55; color: var(--ink); margin: 0; }
+.onboarding-disclaimer p { font-size: 16px; line-height: 1.55; color: var(--ink); margin: 0; }
 .onboarding-disclaimer p:first-child { font-weight: 700; }
 .onboarding-disclaimer p + p { margin-top: 6px; }
 
 /* ---------- journal specific ---------- */
 .mantra-banner { background: var(--cream); border: 1px solid var(--card-border); border-radius: 18px; padding: 16px 16px; margin-bottom: 18px; }
-.mantra-banner .lbl { font-size: 9.5px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
-.mantra-banner .txt { font-family: Georgia, serif; font-style: italic; font-size: 14.5px; line-height: 1.4; color: #2f4a29; }
+.mantra-banner .lbl { font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 6px; }
+.mantra-banner .txt { font-family: Georgia, serif; font-style: italic; font-size: 16px; line-height: 1.4; color: #2f4a29; }
 .chip-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
-.chip { display: inline-block; background: var(--cream); border: 1px solid var(--card-border); border-radius: 12px; padding: 6px 11px; font-size: 11px; font-weight: 600; color: var(--ink); cursor: pointer; font-family: inherit; }
+.chip { display: inline-block; background: var(--cream); border: 1px solid var(--card-border); border-radius: 12px; padding: 6px 11px; font-size: 13.5px; font-weight: 600; color: var(--ink); cursor: pointer; font-family: inherit; }
 .chip.on { background: var(--gold); border-color: var(--gold-dark); color: var(--gold-ink); }
 /* v1.73 : un item de l'auto-évaluation de progression (libellé + chip-row de 3 réponses en mots),
    simple espacement entre chaque ligne — pas de nouveau composant, réutilise .field-lbl et .chip-row
    déjà en place ailleurs dans l'app. */
 .autoeval-item { margin-bottom: 6px; }
-.quote-block { background: var(--cream); border-left: 3px solid var(--sage-dark); border-radius: 8px; padding: 12px 14px; margin: 10px 0 14px; font-family: Georgia, serif; font-style: italic; font-size: 13px; color: var(--ink); line-height: 1.5; }
-.quote-block .quote-meta { font-size: 10.5px; font-style: normal; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--muted); margin-bottom: 6px; }
+.quote-block { background: var(--cream); border-left: 3px solid var(--sage-dark); border-radius: 8px; padding: 12px 14px; margin: 10px 0 14px; font-family: Georgia, serif; font-style: italic; font-size: 15px; color: var(--ink); line-height: 1.5; }
+.quote-block .quote-meta { font-size: 13.5px; font-style: normal; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--muted); margin-bottom: 6px; }
 .scale-row { display: flex; gap: 5px; margin: 8px 0 4px; }
-.scale-dot { flex: 1; height: 26px; border-radius: 8px; background: var(--cream); border: 1px solid var(--card-border); display: flex; align-items: center; justify-content: center; font-size: 10.5px; font-weight: 700; color: var(--muted); cursor: pointer; }
+.scale-dot { flex: 1; height: 26px; border-radius: 8px; background: var(--cream); border: 1px solid var(--card-border); display: flex; align-items: center; justify-content: center; font-size: 13.5px; font-weight: 700; color: var(--muted); cursor: pointer; }
 .scale-dot.chosen { background: var(--gold); border-color: var(--gold-dark); color: var(--gold-ink); }
-.scale-labels { display: flex; justify-content: space-between; font-size: 9.5px; color: var(--muted); margin-bottom: 10px; }
+.scale-labels { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); margin-bottom: 10px; }
 /* v1.45 : échelle sur 10 (outil "Je vérifie, je reprends la main") — mêmes cases que .scale-row/.scale-dot,
    simplement plus étroites pour tenir sur un écran mobile. */
 .scale-row-10 { gap: 3px; }
-.scale-row-10 .scale-dot { height: 26px; font-size: 9px; padding: 0; }
-.empty-state { font-size: 12px; color: var(--muted); font-style: italic; text-align: center; padding: 24px 10px; }
+.scale-row-10 .scale-dot { height: 26px; font-size: 12.5px; padding: 0; }
+.empty-state { font-size: 14.5px; color: var(--muted); font-style: italic; text-align: center; padding: 24px 10px; }
 
 /* v1.86 : outil "J'avance, une marche à la fois" (échelle d'exposition) — liste de situations
    évitées, classées par difficulté. `.exposition-diff` réutilise --sage/--ink (déjà 9.67:1, cf.
@@ -849,41 +862,41 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
    texte reste dans sa couleur normale quel que soit le nombre de tentatives déjà faites. */
 .exposition-list { margin-top: 14px; }
 .exposition-row { display: flex; align-items: center; gap: 10px; background: var(--cream); border: 1px solid var(--card-border); border-radius: 14px; padding: 10px 12px; margin-bottom: 8px; }
-.exposition-diff { flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: var(--sage); color: var(--ink); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; }
-.exposition-txt { flex: 1; font-size: 12px; color: var(--ink); line-height: 1.4; }
-.exposition-verify-btn { flex-shrink: 0; padding: 7px 13px; background: transparent; border: 1px solid var(--sage-dark); color: var(--sage-dark); border-radius: 999px; font-size: 11px; font-weight: 700; cursor: pointer; }
+.exposition-diff { flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: var(--sage); color: var(--ink); display: flex; align-items: center; justify-content: center; font-size: 13.5px; font-weight: 700; }
+.exposition-txt { flex: 1; font-size: 14.5px; color: var(--ink); line-height: 1.4; }
+.exposition-verify-btn { flex-shrink: 0; padding: 7px 13px; background: transparent; border: 1px solid var(--sage-dark); color: var(--sage-dark); border-radius: 999px; font-size: 13.5px; font-weight: 700; cursor: pointer; }
 .plan-block { background: var(--sage); border-radius: 16px; padding: 14px; margin-top: 14px; }
-.plan-block .h { font-size: 11.5px; font-weight: 700; color: #3f4f39; margin-bottom: 8px; line-height: 1.4; }
-.plan-field { background: rgba(255,255,255,0.55); border-radius: 10px; padding: 8px 10px; font-size: 11px; color: #41563f; margin-bottom: 6px; } /* #557052 → #41563f, contraste corrigé v1.71 (même correction déjà faite pour .link-row en v1.66) */
+.plan-block .h { font-size: 14px; font-weight: 700; color: #3f4f39; margin-bottom: 8px; line-height: 1.4; }
+.plan-field { background: rgba(255,255,255,0.55); border-radius: 10px; padding: 8px 10px; font-size: 13.5px; color: #41563f; margin-bottom: 6px; } /* #557052 → #41563f, contraste corrigé v1.71 (même correction déjà faite pour .link-row en v1.66) */
 .plan-field b { color: #3f4f39; display: block; margin-bottom: 3px; }
-.plan-field .plan-input { display: block; width: 100%; border: none; background: none; font: inherit; font-size: 11px; color: #41563f; padding: 0; }
+.plan-field .plan-input { display: block; width: 100%; border: none; background: none; font: inherit; font-size: 13.5px; color: #41563f; padding: 0; }
 .plan-field .plan-input::placeholder { color: #8ba57e; }
-.plan-block .btn-primary { margin-top: 8px; padding: 10px; font-size: 12px; }
+.plan-block .btn-primary { margin-top: 8px; padding: 10px; font-size: 14.5px; }
 /* v1.35 : un plan par déclencheur (bouton "Je change ma façon de réagir" sur chaque entrée). */
 .entry-row-wrap { margin-bottom: 10px; }
 .entry-row-wrap .entry-row { margin-bottom: 6px; }
-.plan-toggle-btn { display: inline-block; padding: 7px 13px; background: transparent; border: 1px solid var(--sage-dark); color: var(--sage-dark); border-radius: 999px; font-size: 11px; font-weight: 700; cursor: pointer; margin-bottom: 4px; }
+.plan-toggle-btn { display: inline-block; padding: 7px 13px; background: transparent; border: 1px solid var(--sage-dark); color: var(--sage-dark); border-radius: 999px; font-size: 13.5px; font-weight: 700; cursor: pointer; margin-bottom: 4px; }
 .plan-toggle-btn.has-plan { background: var(--sage); }
 .plan-toggle-btn:active { opacity: 0.8; }
 .entry-row-wrap .plan-block { margin-top: 6px; }
-.plan-field .plan-situation-fixed { display: block; font-size: 11px; color: #41563f; font-style: italic; } /* #557052 → #41563f, contraste corrigé v1.71 */
+.plan-field .plan-situation-fixed { display: block; font-size: 13.5px; color: #41563f; font-style: italic; } /* #557052 → #41563f, contraste corrigé v1.71 */
 .synth-block { background: var(--sage); border-radius: 16px; padding: 14px; margin: 4px 0 14px; }
-.synth-block .lbl { font-size: 9.5px; font-weight: 700; color: #3f4f39; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
-.synth-block .txt { font-size: 12px; color: #3f4f39; line-height: 1.5; }
-.outcome-badge { display: inline-block; font-size: 9.5px; font-weight: 700; padding: 2px 8px; border-radius: 8px; margin-left: 6px; vertical-align: 1px; }
+.synth-block .lbl { font-size: 13px; font-weight: 700; color: #3f4f39; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
+.synth-block .txt { font-size: 14.5px; color: #3f4f39; line-height: 1.5; }
+.outcome-badge { display: inline-block; font-size: 13px; font-weight: 700; padding: 2px 8px; border-radius: 8px; margin-left: 6px; vertical-align: 1px; }
 .outcome-badge.soft { background: var(--sage); color: #3f4f39; }
 .outcome-badge.hard { background: #e3b9a8; color: #7a3c26; }
 .outcome-badge.avoid { background: var(--card-border); color: var(--muted); }
 /* v1.45 : question de réflexion de la vérification des attentes, même traitement que .ecriture-closing. */
-.reflection-note { font-size: 11px; font-style: italic; color: var(--sage-dark); text-align: center; margin: 10px 0 4px; line-height: 1.5; }
+.reflection-note { font-size: 13.5px; font-style: italic; color: var(--sage-dark); text-align: center; margin: 10px 0 4px; line-height: 1.5; }
 
 /* Page "Les fondements de ViaCalma" (v1.82), niveau 3 : liste complète des références, une ligne par
    auteur (nom en --ink, concept associé en --muted juste en dessous) — pas de tableau ni de colonnes,
    pour rester lisible en une seule colonne à toutes les largeurs d'écran. */
 .fondements-ref-list { display: flex; flex-direction: column; gap: 10px; margin-top: 4px; }
 .fondements-ref { border-bottom: 1px solid var(--card-border); padding-bottom: 8px; }
-.fondements-ref-name { display: block; font-size: 13px; font-weight: 700; color: var(--ink); }
-.fondements-ref-concept { display: block; font-size: 12px; color: var(--muted); line-height: 1.4; margin-top: 1px; }
+.fondements-ref-name { display: block; font-size: 15px; font-weight: 700; color: var(--ink); }
+.fondements-ref-concept { display: block; font-size: 14.5px; color: var(--muted); line-height: 1.4; margin-top: 1px; }
 
 /* ---------- note / status ---------- */
 .note {
@@ -891,7 +904,7 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
   border: 1px solid var(--card-border);
   border-radius: 16px;
   padding: 13px 15px;
-  font-size: 11.5px;
+  font-size: 14px;
   line-height: 1.55;
   color: var(--muted);
   margin-bottom: 16px;
@@ -905,7 +918,7 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
   transform: translateX(-50%);
   background: var(--sage-dark);
   color: #fff;
-  font-size: 12.5px;
+  font-size: 14.5px;
   font-weight: 600;
   padding: 10px 18px;
   border-radius: 14px;
@@ -936,7 +949,7 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
   to { opacity: 1; }
 }
 .splash-credit {
-  font-size: 12.5px;
+  font-size: 14.5px;
   font-weight: 600;
   letter-spacing: 0.03em;
   color: rgba(255,255,255,0.85);
@@ -951,7 +964,7 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
 .splash-hint {
   position: absolute;
   bottom: 34px;
-  font-size: 10.5px;
+  font-size: 13.5px;
   color: rgba(255,255,255,0.6);
   text-align: center;
 }
@@ -968,19 +981,19 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
   margin-top: 12px;
 }
 .mv-title {
-  font-size: 12px;
+  font-size: 14.5px;
   font-weight: 700;
   color: var(--gold-ink);
   margin-bottom: 8px;
 }
 .mv-intro {
-  font-size: 14.5px; /* aligné sur .anecdote, v1.65 */
+  font-size: 16px; /* aligné sur .anecdote, v1.65 */
   line-height: 1.6;
   color: var(--ink);
   margin: 0 0 6px;
 }
 .mv-permission-hint {
-  font-size: 11px;
+  font-size: 13.5px;
   color: var(--muted);
   margin: 0 0 12px;
 }
@@ -994,15 +1007,15 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
   background: none;
   border: none;
   font-family: inherit;
-  font-size: 12px;
+  font-size: 14.5px;
   color: var(--sage-dark);
   text-decoration: underline;
   cursor: pointer;
   padding: 0;
 }
-.mv-hint { font-size: 11px; color: var(--muted); margin: 8px 0 0; }
+.mv-hint { font-size: 13.5px; color: var(--muted); margin: 8px 0 0; }
 .mv-error {
-  font-size: 12px;
+  font-size: 14.5px;
   color: var(--terracotta);
   background: rgba(182,112,74,0.1);
   border-radius: 10px;
@@ -1077,7 +1090,7 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
   border-radius: 4px;
   background: #fff;
 }
-.mv-record-caption { font-size: 11px; color: var(--muted); text-align: center; }
+.mv-record-caption { font-size: 13.5px; color: var(--muted); text-align: center; }
 @media (prefers-reduced-motion: reduce) {
   .mv-ring-fg { transition: none; }
 }
@@ -1093,13 +1106,13 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
   padding: 12px 14px;
   margin-bottom: 14px;
 }
-.home-invite-txt { flex: 1; font-size: 12px; line-height: 1.5; color: var(--ink); }
+.home-invite-txt { flex: 1; font-size: 14.5px; line-height: 1.5; color: var(--ink); }
 .home-invite-txt a { color: var(--sage-dark); font-weight: 700; text-decoration: underline; cursor: pointer; }
 .home-invite-dismiss {
   background: none;
   border: none;
   font-family: inherit;
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1;
   color: var(--muted);
   cursor: pointer;
@@ -1116,7 +1129,7 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
   border-radius: 14px;
   padding: 12px 14px;
   margin-bottom: 14px;
-  font-size: 12.5px;
+  font-size: 14.5px;
   line-height: 1.5;
   color: var(--ink);
   font-weight: 600;
@@ -1134,7 +1147,7 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
   border-radius: 14px;
   padding: 12px 14px;
   margin-bottom: 14px;
-  font-size: 12px;
+  font-size: 14.5px;
   line-height: 1.5;
   color: var(--ink);
 }
@@ -1148,7 +1161,7 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
   padding: 14px;
   margin: 10px 0;
 }
-.detresse-mv-card .lbl { font-size: 9.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--sage-dark); margin-bottom: 6px; }
+.detresse-mv-card .lbl { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--sage-dark); margin-bottom: 6px; }
 
 /* =====================================================================================
    MODE SOMBRE (v1.76) — déclenchement automatique selon le réglage du téléphone

@@ -1,14 +1,14 @@
 // Généré par build.py — ne pas éditer à la main (cf. commentaire dans build.py, v1.78).
-const CACHE_NAME = "socalm-7270b021dae2";
+const CACHE_NAME = "socalm-0c578f6793c9";
 const PRECACHE_URLS = [
   "./assets/icon-180.png",
   "./assets/icon-192.png",
   "./assets/icon-512.png",
   "./assets/icon-maskable-512.png",
   "./assets/logo-johan-raiz.png",
-  "./css/app.css?v=b80afd81",
+  "./css/app.css?v=1aa7c5b8",
   "./index.html",
-  "./js/bundle.482fdbd0.js",
+  "./js/bundle.b6252801.js",
   "./manifest.json"
 ];
 
