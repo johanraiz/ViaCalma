@@ -354,7 +354,7 @@ a.link-row, .link-row {
    "Un petit pas est déjà un pas...", via <p class="highlight">, pas un <span class="hl"> partiel comme
    pour "évitement"). Reprise à l'identique du style défini dans la maquette elle-même. */
 .anecdote p.highlight { font-weight: 700; font-size: 14.5px; color: #2f4a29; }
-.case-tap-zone .z { flex: 1; }
+.case-tap-zone .z { flex: 1; background: transparent; border: none; padding: 0; margin: 0; font: inherit; cursor: pointer; -webkit-appearance: none; appearance: none; }
 
 .closing-hint { font-family: Georgia, serif; font-style: italic; font-size: 15px; color: var(--sage-dark); margin: 16px 0 8px; }
 
@@ -470,14 +470,6 @@ a.link-row, .link-row {
   border-color: var(--sage-dark);
   color: #fff;
 }
-.proposal-flag {
-  font-size: 13px;
-  color: var(--muted);
-  font-style: italic;
-  text-align: center;
-  margin: 0 0 14px;
-}
-
 .grid-tiles {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -841,7 +833,7 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
 .quote-block { background: var(--cream); border-left: 3px solid var(--sage-dark); border-radius: 8px; padding: 12px 14px; margin: 10px 0 14px; font-family: Georgia, serif; font-style: italic; font-size: 15px; color: var(--ink); line-height: 1.5; }
 .quote-block .quote-meta { font-size: 13.5px; font-style: normal; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--muted); margin-bottom: 6px; }
 .scale-row { display: flex; gap: 5px; margin: 8px 0 4px; }
-.scale-dot { flex: 1; height: 26px; border-radius: 8px; background: var(--cream); border: 1px solid var(--card-border); display: flex; align-items: center; justify-content: center; font-size: 13.5px; font-weight: 700; color: var(--muted); cursor: pointer; }
+.scale-dot { flex: 1; height: 26px; border-radius: 8px; background: var(--cream); border: 1px solid var(--card-border); display: flex; align-items: center; justify-content: center; font-size: 13.5px; font-weight: 700; color: var(--muted); cursor: pointer; font-family: inherit; margin: 0; padding: 0; }
 .scale-dot.chosen { background: var(--gold); border-color: var(--gold-dark); color: var(--gold-ink); }
 .scale-labels { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); margin-bottom: 10px; }
 /* v1.45 : échelle sur 10 (outil "Je vérifie, je reprends la main") — mêmes cases que .scale-row/.scale-dot,
@@ -898,18 +890,6 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
 .fondements-ref-name { display: block; font-size: 15px; font-weight: 700; color: var(--ink); }
 .fondements-ref-concept { display: block; font-size: 14.5px; color: var(--muted); line-height: 1.4; margin-top: 1px; }
 
-/* ---------- note / status ---------- */
-.note {
-  background: var(--cream);
-  border: 1px solid var(--card-border);
-  border-radius: 16px;
-  padding: 13px 15px;
-  font-size: 14px;
-  line-height: 1.55;
-  color: var(--muted);
-  margin-bottom: 16px;
-}
-.note strong { color: var(--ink); }
 
 .toast {
   position: fixed;
