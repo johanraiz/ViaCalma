@@ -470,6 +470,30 @@ a.link-row, .link-row {
   border-color: var(--sage-dark);
   color: #fff;
 }
+
+/* v1.101 : presets de vitesse des exercices de respiration (courbe/cœur/bulle) — même gabarit que
+   .view-toggle ci-dessus (contrôle segmenté à 3 options), repris tel quel pour rester cohérent
+   plutôt que d'inventer un second style de segmented control. Visible seulement tant que l'exercice
+   est au repos (cf. js/screens/outil-respiration.js), masqué au premier toucher. */
+.speed-picker { display: flex; gap: 6px; margin: 4px 0 14px; }
+.speed-picker-btn {
+  flex: 1;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 7px 0;
+  border-radius: 10px;
+  border: 1px solid var(--card-border);
+  background: var(--cream);
+  color: var(--muted);
+  cursor: pointer;
+}
+.speed-picker-btn.on {
+  background: var(--sage-dark);
+  border-color: var(--sage-dark);
+  color: #fff;
+}
+
 .grid-tiles {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -591,7 +615,15 @@ a.link-row, .link-row {
 .framing-box p { font-family: Georgia, serif; font-size: 16px; line-height: 1.6; color: var(--ink); margin: 0 0 12px; }
 .framing-box p:last-child { margin-bottom: 0; }
 
-.emergency-strip { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--card-border); text-align: center; }
+/* v1.100 : padding-top porté de 14px à 24px — signalé par Johan sur téléphone réel, le bandeau
+   "besoin d'aide tout de suite" arrivait trop près du texte au-dessus. Cause : `margin-top: auto`
+   pousse ce bandeau vers le bas de l'écran quand il reste de la place libre dans la colonne flex de
+   `.screen` (ex. cadrage), mais ne garantit rien quand il n'en reste plus (ex. l'écran du message
+   vocal, plus chargé en contenu) — dans ce cas, seuls `padding-top` et la bordure séparaient le
+   bandeau du contenu, ce qui pouvait sembler trop juste. `padding-top` est un minimum garanti, quel
+   que soit l'espace libre restant ; augmenté plutôt que de retirer `margin-top: auto` (qui reste
+   utile pour pousser le bandeau en bas des écrans courts en contenu). */
+.emergency-strip { margin-top: auto; padding-top: 24px; border-top: 1px solid var(--card-border); text-align: center; }
 .emergency-strip .lbl { font-size: 13px; font-weight: 700; color: var(--terracotta); text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 4px; }
 .emergency-strip .txt { font-size: 13.5px; color: var(--muted); line-height: 1.5; }
 .emergency-strip .txt b { color: var(--ink); }
