@@ -706,14 +706,18 @@ a.link-row, .link-row {
 .phase-label { text-align: center; font-size: 16px; font-weight: 700; color: var(--sage-dark); margin-bottom: 14px; height: 20px; }
 
 .heart-wrap { display: flex; align-items: center; justify-content: center; margin: 10px 0 20px; }
-.heart-circle { width: 120px; height: 120px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, var(--sage), var(--sage-dark)); box-shadow: 0 0 0 10px rgba(183,205,176,0.3); display: flex; align-items: center; justify-content: center; animation: heartBreathe 14s ease-in-out infinite; }
+/* v1.103 : cercles de respiration agrandis à la demande de Johan ("plus grand plus visible pour
+   faciliter l'exercice") — 120px -> 192px pour le cœur/la bulle, cf. app.js/decisions pour le
+   raisonnement complet et les tailles retenues pour chaque écran. */
+.heart-circle { width: 192px; height: 192px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, var(--sage), var(--sage-dark)); box-shadow: 0 0 0 10px rgba(183,205,176,0.3); display: flex; align-items: center; justify-content: center; animation: heartBreathe 14s ease-in-out infinite; }
 @keyframes heartBreathe {
   0%      { transform: scale(0.82); }
   28.57%  { transform: scale(1.16); }
   57.14%  { transform: scale(1.16); }
   100%    { transform: scale(0.82); }
 }
-.heart-label { color: #fff; font-weight: 700; font-size: 16px; text-shadow: 0 1px 3px rgba(0,0,0,0.25); }
+/* v1.103 : étiquette agrandie en cohérence avec le cercle (16px -> 19px). */
+.heart-label { color: #fff; font-weight: 700; font-size: 19px; text-shadow: 0 1px 3px rgba(0,0,0,0.25); }
 
 .word-chip { display: inline-block; background: var(--cream); border: 1px solid var(--card-border); border-radius: 14px; padding: 7px 12px; font-size: 14px; font-weight: 600; color: var(--ink); margin: 0 6px 8px 0; cursor: pointer; font-family: inherit; }
 .word-chip.chosen { background: var(--gold); border-color: var(--gold-dark); color: var(--gold-ink); }
@@ -723,8 +727,10 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
 .color-dot.chosen { box-shadow: 0 0 0 3px var(--bg), 0 0 0 5px var(--ink); }
 
 .bubble-wrap { display: flex; align-items: center; justify-content: center; margin: 6px 0 20px; }
-.bubble { width: 120px; height: 120px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; animation: heartBreathe 14s ease-in-out infinite; box-shadow: 0 0 26px 8px rgba(232,201,138,0.55), 0 0 60px 22px rgba(232,201,138,0.3), 0 0 100px 40px rgba(232,201,138,0.15); }
-.bubble-word { font-family: Georgia, serif; font-style: italic; font-size: 15px; color: var(--gold-ink); }
+/* v1.103 : idem cœur ci-dessus — 120px -> 192px. */
+.bubble { width: 192px; height: 192px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; animation: heartBreathe 14s ease-in-out infinite; box-shadow: 0 0 26px 8px rgba(232,201,138,0.55), 0 0 60px 22px rgba(232,201,138,0.3), 0 0 100px 40px rgba(232,201,138,0.15); }
+/* v1.103 : idem, 15px -> 17px. */
+.bubble-word { font-family: Georgia, serif; font-style: italic; font-size: 17px; color: var(--gold-ink); }
 
 .fav-row { display: flex; gap: 2px; }
 .fav-row button { background: none; border: none; cursor: pointer; font-size: 16.5px; color: var(--card-border); padding: 2px; line-height: 1; }
@@ -739,18 +745,24 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
 .gift-card { background: var(--sage-dark); border-radius: 22px; padding: 22px 18px; margin: 10px 0 16px; }
 .gift-card .mantra { font-family: Georgia, serif; font-size: 19px; line-height: 1.5; color: #fff; text-align: center; }
 .breath-wrap { display: flex; align-items: center; justify-content: center; margin: 4px 0 18px; }
-.breath-circle { width: 128px; height: 128px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, var(--sage), var(--sage-dark)); box-shadow: 0 0 0 10px rgba(183,205,176,0.35); display: flex; align-items: center; justify-content: center; animation: onbBreathe 9s ease-in-out infinite; }
+/* v1.103 : 128px -> 200px (onboarding + "Moment difficile", cf. onboarding.js/detresse.js — même
+   classe, même rendu, agrandie une seule fois ici). */
+.breath-circle { width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, var(--sage), var(--sage-dark)); box-shadow: 0 0 0 10px rgba(183,205,176,0.35); display: flex; align-items: center; justify-content: center; animation: onbBreathe 9s ease-in-out infinite; }
 @keyframes onbBreathe {
   0%    { transform: scale(0.78); }
   44.4% { transform: scale(1.12); }
   100%  { transform: scale(0.78); }
 }
-.breath-label { color: #fff; font-weight: 700; font-size: 16.5px; text-shadow: 0 1px 3px rgba(0,0,0,0.25); letter-spacing: 0.02em; }
+/* v1.103 : idem, 16.5px -> 19px (l'ancienne surcharge #onboardingScreen .breath-label, 17.5px,
+   devenait plus petite que cette nouvelle base et a donc été retirée plus bas — cf. recherche
+   "onboardingScreen .breath-label"). */
+.breath-label { color: #fff; font-weight: 700; font-size: 19px; text-shadow: 0 1px 3px rgba(0,0,0,0.25); letter-spacing: 0.02em; }
 
 /* ---------- outil "Le mantra" (v1.27) — courbe et gabarit propres, cf. design/ecrans-outils-je-mancre.html ---------- */
 .mantra-wrap { display: flex; align-items: center; justify-content: center; margin: 10px 0 12px; }
+/* v1.103 : 172px -> 224px, même demande que les autres cercles de respiration ci-dessus. */
 .mantra-circle {
-  width: 172px; height: 172px; border-radius: 50%;
+  width: 224px; height: 224px; border-radius: 50%;
   background: radial-gradient(circle at 35% 30%, var(--sage), var(--sage-dark));
   box-shadow: 0 0 0 10px rgba(183,205,176,0.35);
   display: flex; align-items: center; justify-content: center;
@@ -766,7 +778,8 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
   40%  { transform: scale(1.1); }
   100% { transform: scale(0.82); }
 }
-.mantra-txt { color: #fff; font-weight: 700; font-size: 15px; text-align: center; line-height: 1.4; text-shadow: 0 1px 3px rgba(0,0,0,0.25); }
+/* v1.103 : idem, 15px -> 17px. */
+.mantra-txt { color: #fff; font-weight: 700; font-size: 17px; text-align: center; line-height: 1.4; text-shadow: 0 1px 3px rgba(0,0,0,0.25); }
 
 /* ---------- outil "Je m'ancre, je suis là" (v1.28-v1.29) — étapes des cinq sens, cf. design/ecrans-outils-je-mancre.html ---------- */
 .sense-step { display: flex; align-items: flex-start; gap: 10px; background: var(--cream); border: 1px solid var(--card-border); border-radius: 14px; padding: 9px 11px; margin-bottom: 7px; }
@@ -836,7 +849,6 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
 #onboardingScreen .option .h { font-size: 16.5px; }
 #onboardingScreen .option .d { font-size: 14.5px; }
 #onboardingScreen .gift-card .mantra { font-size: 20px; }
-#onboardingScreen .breath-label { font-size: 17.5px; }
 
 /* v1.67 : mention "ViaCalma ne remplace pas une thérapie" (texte mis à jour en v1.79, app renommée
    depuis SoCalm), en toute dernière chose avant d'entrer
