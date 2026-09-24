@@ -958,6 +958,28 @@ input.word-chip.custom { background: transparent; border-style: dashed; border-c
 }
 .toast.show { opacity: 1; transform: translateX(-50%) translateY(-4px); }
 
+/* v1.104 : bandeau "nouvelle version disponible" (cf. index.html) — en haut de l'écran plutôt qu'en
+   bas comme le toast, pour ne jamais se superposer avec lui et rester visible dès l'ouverture de
+   l'app sans dépendre d'une interaction. `padding-top` inclut env(safe-area-inset-top) pour rester
+   sous l'encoche/la barre de statut sur les téléphones qui en ont une. */
+.update-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--sage-dark);
+  color: #fff;
+  padding: calc(env(safe-area-inset-top, 0px) + 10px) 14px 10px;
+  box-shadow: 0 4px 14px rgba(34,31,27,0.18);
+}
+.update-banner-txt { flex: 1; font-size: 14.5px; font-weight: 600; }
+.update-banner-btn { background: #fff; color: var(--sage-dark); border: none; border-radius: 10px; padding: 7px 14px; font-size: 14px; font-weight: 700; font-family: inherit; cursor: pointer; }
+.update-banner-dismiss { background: none; border: none; color: rgba(255,255,255,0.85); font-size: 15px; padding: 4px 2px; cursor: pointer; line-height: 1; }
+
 /* ---------- écran de lancement ---------- */
 .splash-screen {
   flex: 1;

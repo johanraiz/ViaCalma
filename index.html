@@ -22,11 +22,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/app.css?v=3949f1f9">
+<link rel="stylesheet" href="css/app.css?v=5542792e">
 </head>
 <body>
 <div id="app"></div>
 <div id="toast" class="toast" role="status" aria-live="polite"></div>
+<!-- v1.104 : bandeau "nouvelle version disponible" — à la demande de Johan, après avoir expliqué
+     qu'un commit GitHub Pages ne se répercute pas tout seul sur l'app déjà installée chez un
+     testeur (le service worker sert la version en cache tant qu'on ne recharge pas). Masqué par
+     défaut (hidden), affiché uniquement quand une vraie mise à jour est détectée (cf. script
+     ci-dessous) — jamais au tout premier lancement. -->
+
+<div id="updateBanner" class="update-banner" hidden role="status" aria-live="polite">
+  <span class="update-banner-txt">Nouvelle version disponible</span>
+  <button type="button" id="updateReloadBtn" class="update-banner-btn">Recharger</button>
+  <button type="button" id="updateDismissBtn" class="update-banner-dismiss" aria-label="Fermer ce message">✕</button>
+</div>
 <script>
   // Service worker (v1.78) : présent seulement dans dist/ (généré par build.py, cf. commentaire
   // dédié dans ce fichier) — absent de app/ pendant le développement, pour ne jamais gêner
@@ -36,7 +47,46 @@
     window.addEventListener("load", () => {
       navigator.serviceWorker.register("sw.js").catch(() => {});
     });
+
+    // v1.104 : sw.js (cf. build.py) appelle déjà self.skipWaiting()/self.clients.claim() sans
+    // attendre de confirmation de la page — la nouvelle version s'active donc toute seule dès que
+    // le navigateur l'a détectée et installée en arrière-plan (généralement à la prochaine ouverture
+    // de l'app avec une connexion). "controllerchange" est l'évènement qui signale exactement ce
+    // moment-là : le service worker qui contrôle cette page vient de changer. On ignore le tout
+    // premier déclenchement (celui de l'installation initiale, où il n'y avait pas encore de
+    // contrôleur avant) pour ne montrer le bandeau que lors d'une vraie mise à jour, jamais au
+    // premier lancement de l'app.
+    let hadController = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (hadController && window.showUpdateBanner) window.showUpdateBanner();
+      hadController = true;
+    });
   }
+
+  // v1.104 : le bandeau est en position fixe (cf. app.css) pour rester visible même si l'écran du
+  // dessous défile, mais un élément fixe ne pousse rien dans le flux normal de la page — sans ce
+  // correctif, il se superposerait au haut de l'écran en cours (bouton retour, vue grille/liste,
+  // etc.) au lieu de le décaler. On mesure sa hauteur réelle une fois affiché (elle varie selon
+  // l'encoche/la barre de statut du téléphone, cf. env(safe-area-inset-top) dans app.css) et on
+  // l'applique en padding-top sur #app pour repousser tout le contenu d'autant.
+  document.addEventListener("DOMContentLoaded", () => {
+    const banner = document.getElementById("updateBanner");
+    const appEl = document.getElementById("app");
+    const reloadBtn = document.getElementById("updateReloadBtn");
+    const dismissBtn = document.getElementById("updateDismissBtn");
+    window.showUpdateBanner = () => {
+      if (!banner) return;
+      banner.hidden = false;
+      if (appEl) appEl.style.paddingTop = banner.offsetHeight + "px";
+    };
+    window.hideUpdateBanner = () => {
+      if (!banner) return;
+      banner.hidden = true;
+      if (appEl) appEl.style.paddingTop = "";
+    };
+    if (reloadBtn) reloadBtn.addEventListener("click", () => window.location.reload());
+    if (dismissBtn) dismissBtn.addEventListener("click", () => window.hideUpdateBanner());
+  });
 </script>
 <script src="js/bundle.551ac6a0.js"></script>
 </body>
